@@ -15,7 +15,7 @@ var artists = [{
 app.get('/ping', function(req, res) {
     res.send('Pong :)');
 });
-app.use(express.static(path.join(__dirname, '/build')));
+// app.use(express.static(path.join(__dirname, '/build')));
 
 app.get('/art', function(req, res) {
     res.send(
